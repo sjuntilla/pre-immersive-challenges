@@ -1,11 +1,13 @@
 module.exports = function doubleStrChars(str) {
   // write your code in here
-  var returnedString = '';
-  if(returnedString === undefined || returnedString === false){
+  if(typeof (str) !== 'string'){
     return 'not a string!';
-  } else {
+  }
+  var returnedString = '';
   for (i = 0; i < str.length; i++) {
     returnedString += str.charAt(i) + str.charAt(i);
-  } return returnedString;
+  }
+    return returnedString;
+
 }
-}
+
